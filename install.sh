@@ -4,7 +4,7 @@
 # Idempotente: pode rodar varias vezes sem problema.
 set -euo pipefail
 
-ALL_TOOLS=(base docker nvm uv claude gemini ollama zed firefox dbeaver obsidian obs vlc controllers tablet)
+ALL_TOOLS=(base docker nvm uv claude gemini ollama zed firefox dbeaver obsidian obs vlc spotify controllers tablet)
 ONLY=""; SKIP=""
 NVM_VERSION="v0.40.3"
 
@@ -147,6 +147,7 @@ install_dbeaver()  { log "DBeaver";  flatpak_app io.dbeaver.DBeaverCommunity; }
 install_obsidian() { log "Obsidian"; flatpak_app md.obsidian.Obsidian; }
 install_obs()      { log "OBS Studio"; flatpak_app com.obsproject.Studio; }
 install_vlc()      { log "VLC"; flatpak_app org.videolan.VLC; }
+install_spotify()  { log "Spotify"; flatpak_app com.spotify.Client; }
 
 install_controllers() {
   log "Controles (8BitDo, GameSir): AntiMicroX, jstest-gtk, regras udev"

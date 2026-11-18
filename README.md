@@ -14,7 +14,7 @@ Linguagens sao instaladas por gerenciadores de versao (nvm para Node, uv para Py
 | Ollama | script oficial | winget |
 | Zed (editor, sem extensoes) | script oficial | winget |
 | Firefox | dnf (Fedora) / Flatpak (Ubuntu) | winget |
-| DBeaver, Obsidian, OBS Studio, VLC | Flatpak | winget |
+| DBeaver, Obsidian, OBS Studio, VLC, Spotify | Flatpak | winget |
 | Controles 8BitDo / GameSir | AntiMicroX, jstest-gtk, regras udev, Chromium (firmware 8BitDo via web) | 8BitDo Ultimate Software V2, GameSir Connect, AntiMicroX |
 | Mesa Huion | libwacom (driver hid-uclogic ja vem no kernel) | driver oficial (manual) |
 
