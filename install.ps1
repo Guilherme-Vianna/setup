@@ -25,9 +25,10 @@ $WingetTools = [ordered]@{
   obs      = @('OBSProject.OBSStudio')
   vlc      = @('VideoLAN.VLC')
   spotify  = @('Spotify.Spotify')
+  radmin   = @('Famatech.RadminVPN')
   controllers = @('8BitDo.UltimateSoftwareV2','GameSir.GameSirConnect','AntiMicroX.antimicrox')
 }
-$All = @('base','docker','nvm','uv','claude','gemini','ollama','zed','firefox','dbeaver','obsidian','obs','vlc','spotify','controllers','tablet')
+$All = @('base','docker','nvm','uv','claude','gemini','ollama','zed','firefox','dbeaver','obsidian','obs','vlc','spotify','radmin','controllers','tablet')
 
 if ($List) { $All; return }
 
