@@ -38,6 +38,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
 ## Notas
+- Radmin VPN so existe para Windows; no Linux use uma alternativa (ZeroTier, Tailscale ou WireGuard).
 - Idempotente: pula o que ja esta instalado.
 - Linux: faca logout/login depois do Docker para usar sem `sudo`; abra novo terminal para o nvm/uv entrarem no PATH.
 - Windows: Docker Desktop pode exigir WSL2 e reinicio; apos instalar o nvm, se o Node nao aparecer, reabra o terminal e rode de novo.
