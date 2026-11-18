@@ -42,3 +42,14 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 - Windows: Docker Desktop pode exigir WSL2 e reinicio; apos instalar o nvm, se o Node nao aparecer, reabra o terminal e rode de novo.
 - Para adicionar ferramenta: Linux = funcao `install_xxx` + nome em `ALL_TOOLS`; Windows = entrada em `$WingetTools` + nome em `$All`.
 - Deliberadamente fora: VS Code, Java, .NET, CMake, kubectl, cloudflared, pgAdmin, Insomnia, Brave.
+
+## Migracao (backup e restore)
+```powershell
+# No Windows, antes de formatar (nao copia credenciais de login):
+.\backup.ps1 -Dest E:\ -Extra 'C:\caminho\vault-obsidian'
+```
+```bash
+# No Fedora, depois do install.sh:
+./restore.sh /run/media/$USER/HD/setup-backup-AAAAMMDD
+```
+O backup contem sua chave SSH privada: nao suba para nuvem nem para repositorio. O `restore.sh` ajusta as permissoes do `~/.ssh`, guarda `.bak` do que for sobrescrito e baixa de novo os modelos do Ollama.
